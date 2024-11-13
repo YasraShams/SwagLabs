@@ -1,4 +1,11 @@
- <H1>Swag Labs Automation Testing Plan: POM Implementation</H1> 
+
+<H1>Swag Labs Automation Testing Plan: POM Implementation</H1> 
+
+**Screen Recording of Tests running:**
+
+https://github.com/user-attachments/assets/6ca15a0b-8bb7-4abb-9e98-4ff7c3ed6477
+
+--------------------------------------
 
 **Introduction:**
 
@@ -72,9 +79,7 @@ Key scenarios are automated using Cypress with the **Page Object Model (POM)** t
 The automation test plan establishes a clear strategy for efficient and reliable testing of the Swag Labs application. By implementing this plan, we aim to enhance application stability, improve testing accuracy, and significantly reduce testing time and costs. This approach will ensure the Swag Labs application consistently meets quality standards, supporting faster and more reliable releases.
 
 
-**Screen Recording of Tests running:**
 
-https://github.com/user-attachments/assets/6ca15a0b-8bb7-4abb-9e98-4ff7c3ed6477
 
 
 
