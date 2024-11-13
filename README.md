@@ -1,4 +1,3 @@
-
 <H1>Swag Labs Automation Testing Plan: POM Implementation</H1> 
 
 **Screen Recording of Tests running:**
