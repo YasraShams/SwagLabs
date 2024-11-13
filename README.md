@@ -1,10 +1,12 @@
- <H1>Swag Labs Automation Testing Plan</H1> 
+ <H1>Swag Labs Automation Testing Plan: POM Implementation</H1> 
 
 **Introduction:**
+
 This test plan is designed to identify the scope and approach for all automation testing activities for Swag labs, an application for online shopping. The purpose of this document is to execute the test cases that provide 100% test coverage and reduce manual effort.
 
 
 **Objective:**
+
 The objective of this test plan is as follows:
 - Ensure reliability of main user flows: Login, Product Browsing, Add to Cart, Checkout, and Logout.
 - Reduce manual effort and increase the speed of testing.
@@ -16,7 +18,8 @@ The objective of this test plan is as follows:
 - UI/UX testing that checks for visual consistency and user experience.
 
 **Test Strategy:**
-Key scenarios are automated using Cypress with the Page Object Model (POM) to improve maintainability and reusability of test scripts.
+
+Key scenarios are automated using Cypress with the **Page Object Model (POM)** to improve maintainability and reusability of test scripts.
 
 **Test environment:**
 - **Web Browsers:** Chrome, Firefox.
@@ -64,7 +67,8 @@ Key scenarios are automated using Cypress with the Page Object Model (POM) to im
 - User information (First name, Last name, Zip/Postal Code)
 
 
-**Conclusion**
+**Conclusion:**
+
 The automation test plan establishes a clear strategy for efficient and reliable testing of the Swag Labs application. By implementing this plan, we aim to enhance application stability, improve testing accuracy, and significantly reduce testing time and costs. This approach will ensure the Swag Labs application consistently meets quality standards, supporting faster and more reliable releases.
 
 
