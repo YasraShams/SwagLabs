@@ -1,16 +1,16 @@
 pipeline {
-    agent none  // Tells Jenkins not to use the default agent
+    agent none
 
     stages {
         stage('Install dependencies') {
             agent {
                 docker {
                     image 'cypress/browsers:node-18.12.0-chrome-107'
-                    args '-v /var/run/docker.sock:/var/run/docker.sock'  // Allow Docker in Docker
+                    args '-v /dev/shm:/dev/shm'
                 }
             }
             steps {
-                sh 'npm ci'  // Install dependencies using npm
+                sh 'npm ci'
             }
         }
 
@@ -18,11 +18,11 @@ pipeline {
             agent {
                 docker {
                     image 'cypress/browsers:node-18.12.0-chrome-107'
-                    args '-v /var/run/docker.sock:/var/run/docker.sock'  // Allow Docker in Docker
+                    args '-v /dev/shm:/dev/shm'
                 }
             }
             steps {
-                sh 'npx cypress run'  // Run Cypress tests
+                sh 'npx cypress run'
             }
         }
     }
