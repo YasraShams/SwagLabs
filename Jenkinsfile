@@ -1,20 +1,23 @@
 pipeline {
-  agent {
-    docker {
-      image 'cypress/browsers:node-18.12.0-chrome-107'
-      args '-u root'
+    agent {
+        label 'docker' // Specify the label of the node running Docker
     }
-  }
-  stages {
-    stage('Install dependencies') {
-      steps {
-        sh 'npm ci'
-      }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+        stage('Run Cypress Tests') {
+            steps {
+                sh 'npx cypress run --headless --browser chrome'
+            }
+        }
     }
-    stage('Run Cypress Tests') {
-      steps {
-        sh 'npx cypress run'
-      }
-    }
-  }
 }
+
